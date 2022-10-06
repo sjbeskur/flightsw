@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "firefly",
+    "firefly-core",
+    "firefly-cv",
+    "firefly-gnc",
+]
