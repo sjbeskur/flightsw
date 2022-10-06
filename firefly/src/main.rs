@@ -1,9 +1,9 @@
 use log;
 use env_logger;
 use std::env;
-use std::os::unix::net::UnixStream;
-use std::net::TcpStream;
-use std::io::{*,Write,BufWriter};
+//use std::os::unix::net::UnixStream;
+//use std::net::TcpStream;
+//use std::io::{*,Write,BufWriter};
 
 mod gnc;
 mod poc;
@@ -29,10 +29,10 @@ fn main() {
     trace!("{}", url.to_string());
 
     let mut sat = gnc::Satellite::new();
-    let coords = sat.get_coordinates();
+    let _coords = sat.get_coordinates();
     
     poc::mult3x3s();
-    poc::multVec3xMat3();
+    poc::mult_vec3x_mat3();
 /*
     info!("trying connect sender to unix socket @{}-{}.sock", &url[5..]);
     match UnixStream::connect(format!("{}-{}.sock",&url[5..], id)){

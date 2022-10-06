@@ -17,10 +17,10 @@ pub fn mult3x3s(){
 
 }
 
-pub fn multVec3xMat3(){
-    let v3 = Vector3::new(1, 2, 3);
+pub fn mult_vec3x_mat3(){
+    let _v3 = Vector3::new(1, 2, 3);
     //Matrix3x3::zero();
-    let my3x3 = Matrix3x3::new(11, 12, 13,
+    let _my3x3 = Matrix3x3::new(11, 12, 13,
         21, 22, 23,
         31, 32, 33,);
 

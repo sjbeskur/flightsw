@@ -22,6 +22,7 @@ impl Satellite{
         coords
     }
 
+    #[allow(dead_code)]
     pub fn launch_app(){
 
     }
